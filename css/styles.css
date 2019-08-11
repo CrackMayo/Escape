@@ -1,0 +1,58 @@
+section{
+    width:auto;
+    height:auto;
+    /* border:1px solid black; */
+
+    /* max-width: 50%;
+    height: auto; */
+
+ 
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+
+  }
+
+
+#PantallaPrincipal{
+    background-image: url("../img/background3.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+  
+
+.ocultar{
+    display:none;
+}
+
+
+#logo{
+
+    max-width: 50%;
+    height: auto;
+    padding-top:50px;
+    display: block;
+    margin:auto;
+  
+}
+
+.button{
+    max-width: 70%;
+    height: auto;
+    padding-top:60px;
+    display: block;
+    margin:auto;
+}
+
+#info{
+    padding-top:70px !important;
+    padding-bottom: 10px;
+    max-width: 20%;
+    height: auto;
+}
+
+  
+ 
