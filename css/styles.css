@@ -16,8 +16,6 @@ section{
   }
 
 
-
-
 body{
     background-position: center center;
     background-attachment: fixed;
@@ -68,7 +66,7 @@ body{
 .titulo{
     max-width: 100%;
     height: auto;
-    padding-top:50px;
+    padding-top:30px;
     display: block;
     margin:auto;
 }
@@ -96,6 +94,7 @@ body{
     padding-top:40px;
     display: block;
     margin:auto;
+  
 }
 
 #botones{
@@ -206,5 +205,19 @@ p{
     
 }
 
+
+.seleccionado{
+    border:2px solid white;
+    height: auto;
+    width: auto;
+}
+
+#btnReiniciar{
+    max-width: 50%;
+    height: auto;
+    padding-top:40%;
+    display: block;
+    margin:auto;
+}
 
  

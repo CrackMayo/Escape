@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body background="background3.png">
+<body background="img/background3.png">
     <section id="pantallaPrincipal_1" class="">
 
         <img src="img/logo.png" alt="" id="logo">
@@ -30,7 +30,7 @@
                 <input id="btnVolver_2" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="sobre"
                     onclick="volverPrincipal();">
                 <img id="backgroundMarcador" src="img/txt.png" class=" sobre instrucciones" />
-                <p class="sobreTexto score">0 - 0</p>
+                <p id="score" class="sobreTexto score">0 - 0</p>
             </div>
         </div>
         <div id="cartaSoldado">
@@ -39,17 +39,17 @@
 
         <div id="resultado">
 
-            <p>Seleccione una carta.</p>
+            <p id="mensaje">Seleccione una carta</p>
         </div>
 
         <div id="cartasJugador">
             <div id="botones">
                 <input id="cartaCastillo" type="image" src="img/cartaCastillo.png" alt="Submit" class="sobre castillo"
-                    onclick="volverPrincipal();">
+                    onclick="batalla(this);">
                 <input id="cartaEspada" type="image" src="img/cartaEspada.png" alt="Submit" class="sobre espada"
-                    onclick="volverPrincipal();">
+                    onclick="batalla(this);">
                 <input id="cartaPergamino" type="image" src="img/cartaPergamino.png" alt="Submit"
-                    class="sobre pergamino" onclick="volverPrincipal();">
+                    class="sobre pergamino" onclick="batalla(this);">
 
 
             </div>
@@ -87,6 +87,13 @@
         <input id="btnVolver_5" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="btnVolver"
             onclick="volverPrincipal();">
     </section>
+    <section id="resultado_6" class="ocultar">
+        <img id="resultadoBatalla" src="img/btnInformacion.png" class="titulo">
+        <input id="btnReiniciar" type="image" src="img/btnReiniciar.png" alt="Submit" onclick="volverJuego();">
+        <input id="btnVolver_6" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="btnVolver"
+        onclick="volverPrincipal();">
+    </section> 
+
     <audio id="soundTrack" src="audio/MedievalMusic.mp3" autoplay="true" loop="true"></audio>
 
     <script src="js/main.js"></script>
