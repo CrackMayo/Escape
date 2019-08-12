@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,88 @@
     <title>Escape</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <section id="PantallaPrincipal" class="">
+
+<body background="background3.png">
+    <section id="pantallaPrincipal_1" class="">
 
         <img src="img/logo.png" alt="" id="logo">
 
-        <input id="comenzar" type="image" src="img/btnComenzar.png" alt="Submit" class="button">
-        <input id="comoJugar" type="image" src="img/btnComoJugar.png" alt="Submit" class="button">
-        <input id="historia" type="image" src="img/btnHistoria.png" alt="Submit" class="button">
-        <input id="info" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="button">
+        <input id="btnComenzar_2" type="image" src="img/btnComenzar.png" alt="Submit" class="button"
+            onclick="cambiarSeccion(this);">
+        <input id="btnComoJugar_3" type="image" src="img/btnComoJugar.png" alt="Submit" class="button"
+            onclick="cambiarSeccion(this);">
+        <input id="btnHistoria_4" type="image" src="img/btnHistoria.png" alt="Submit" class="button"
+            onclick="cambiarSeccion(this);">
+        <input id="btnInfo_5" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="button"
+            onclick="cambiarSeccion(this);">
 
     </section>
-    <section id="ComoJugar" class="ocultar"></section>
-    <section id="Historia" class="ocultar"></section>
-    
+    <section id="empezar_2" class="ocultar">
+        <div id="marcador">
+            <div id="botones">
+                <input id="btnVolver_2" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="sobre"
+                    onclick="volverPrincipal();">
+                <img id="backgroundMarcador" src="img/txt.png" class=" sobre instrucciones" />
+                <p class="sobreTexto score">0 - 0</p>
+            </div>
+        </div>
+        <div id="cartaSoldado">
+            <img id="cartaAleatoria" src="img/cartaAleatoria.png" class="cartas" />
+        </div>
 
+        <div id="resultado">
+
+            <p>Seleccione una carta.</p>
+        </div>
+
+        <div id="cartasJugador">
+            <div id="botones">
+                <input id="cartaCastillo" type="image" src="img/cartaCastillo.png" alt="Submit" class="sobre castillo"
+                    onclick="volverPrincipal();">
+                <input id="cartaEspada" type="image" src="img/cartaEspada.png" alt="Submit" class="sobre espada"
+                    onclick="volverPrincipal();">
+                <input id="cartaPergamino" type="image" src="img/cartaPergamino.png" alt="Submit"
+                    class="sobre pergamino" onclick="volverPrincipal();">
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="comoJugar_3" class="ocultar">
+        <img src="img/btnComoJugar.png" class="titulo">
+        <img src="img/instruccion1.png" class="instrucciones">
+        <img src="img/instruccion2.png" class="instrucciones">
+        <img src="img/instruccion3.png" class="instrucciones2">
+        <input id="btnVolver_5" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="btnVolver"
+            onclick="volverPrincipal();">
+    </section>
+    <section id="historia_4" class="ocultar">
+        <img src="img/btnHistoria.png" class="titulo">
+        <img src="img/historia.png" class="instrucciones">
+        <input id="btnVolver_4" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="btnVolver"
+            onclick="volverPrincipal();">
+
+    </section>
+    <section id="info_5" class="ocultar">
+        <img src="img/btnInformacion.png" class="titulo">
+        <div id="botones">
+            <img src="img/txtInformacion.png" class="instrucciones" />
+            <input id="btnSi" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="btnOpcionSi sobre"
+                onclick="StartOrStop(true);">
+            <input id="btnNo" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="btnOpcionNo sobre"
+                onclick="StartOrStop(false);">
+        </div>
+
+
+        <!-- <img src="img/txtInformacion.png" class="instrucciones"> -->
+        <input id="btnVolver_5" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="btnVolver"
+            onclick="volverPrincipal();">
+    </section>
+    <audio id="soundTrack" src="audio/MedievalMusic.mp3" autoplay="true" loop="true"></audio>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

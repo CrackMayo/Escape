@@ -7,7 +7,7 @@ section{
     height: auto; */
 
  
-    display: block;
+    /* display: block; */
     justify-content: center;
     align-items: center;
     max-width: 100%;
@@ -16,8 +16,9 @@ section{
   }
 
 
-#PantallaPrincipal{
-    background-image: url("../img/background3.png");
+
+
+body{
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -47,12 +48,163 @@ section{
     margin:auto;
 }
 
-#info{
-    padding-top:70px !important;
-    padding-bottom: 10px;
+#btnInfo_5{
+    padding-top:60px !important;
+    padding-bottom: 20px;
     max-width: 20%;
     height: auto;
 }
 
-  
+
+.prueba{
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-left: 0px;
+    position: absolute;
+}
+
+.titulo{
+    max-width: 100%;
+    height: auto;
+    padding-top:50px;
+    display: block;
+    margin:auto;
+}
+
+.instrucciones{
+    max-width: 80%;
+    height: auto;
+    padding-top:30px;
+    display: block;
+    margin:auto;
+}
+
+.instrucciones2{
+    max-width: 80%;
+    height: auto;
+    padding-top:0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnVolver{
+    max-width: 20%;
+    height: auto;
+    padding-top:40px;
+    display: block;
+    margin:auto;
+}
+
+#botones{
+    position: relative;
+   }
+.sobre {
+    position:absolute;
+    top:0px;
+    left:0px;
+    border:none;
+}
+.btnOpcionSi{
+    max-width: 10%;
+    height: auto;
+    margin-top: 12%;
+    display: block;
+    margin-left: 48%;
+     
+}
+
+.btnOpcionNo{
+    max-width: 10%;
+    height: auto;
+    margin-top: 12%;
+    display: block;
+    margin-left: 75%;
+
+}
+
+#btnVolver_2{
+    max-width: 15%;
+    height: auto;
+    padding-top:40px;
+    margin-left: 10%;
+    
+    
+}
+
+#marcador{
+    position: relative;
+
+    
+}
+
+#backgroundMarcador{
+    max-width: 50%;
+    height: auto;
+    padding-top:-10px;
+    margin-left: 50%; 
+}
+
+#cartaAleatoria{
+
+    max-width: 30%;
+    height: auto;
+    padding-top:44%;
+    display: block;
+    margin:auto;
+
+}
+
+.castillo{
+
+    max-width: 30%;
+    height: auto;
+    padding-top:30%;
+    padding-bottom:10%;
+    margin-left: 3%;
+
+}
+
+.espada{
+
+    max-width: 30%;
+    height: auto;
+    padding-top:30%;
+    padding-bottom:10%;
+
+    margin-left: 35%;
+
+}
+
+.pergamino{
+
+    max-width: 30%;
+    height: auto;
+    padding-top:30%;
+    padding-bottom:10%;
+    margin-left: 67%;
+
+}
+
+
+p{
+ text-align: center;   
+ margin-top: 20%
+}
+
+.score{
+    margin-left: 72%; 
+    padding-top: 10px;
+
+}
+
+.sobreTexto{
+    position: absolute;
+    top: 10px;
+    
+}
+
+
  
