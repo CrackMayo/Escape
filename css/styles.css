@@ -17,10 +17,10 @@ section{
 
 
 body{
-    background-position: center center;
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
 }
   
 
