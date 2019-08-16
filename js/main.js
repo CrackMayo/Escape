@@ -51,10 +51,17 @@ function volverJuego() {
 
 function StartOrStop(estado) {
     var audio = document.getElementById("soundTrack")
-    if (estado)
+    if (estado.id === "btnSonido2"){
+        estado.src = "img/btnSonidoOn.png";
+        estado.id = "btnSonido1"
         audio.play();
-    else
+    } else{
+        estado.src = "img/btnSonidoOff.png";
+        estado.id = "btnSonido2"
         audio.pause();
+    }
+
+        
 
 }
 

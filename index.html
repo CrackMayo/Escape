@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body background="img/background2.png">
+<body background="img/background.png">
     <section id="pantallaPrincipal_1" class="">
 
         <img src="img/logo.png" alt="" id="logo">
@@ -25,10 +25,20 @@
     <section id="empezar_2" class="ocultar">
         <div id="marcador">
             <div id="botones">
-                <input id="btnVolver_2" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="sobre"
-                    onclick="volverPrincipal();">
-                <img id="backgroundMarcador" src="img/txt.png" class=" sobre instrucciones" />
-                <p id="score" class="sobreTexto score">0 - 0</p>
+                <div>
+                    <input id="btnVolver_2" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="sobre"
+                        onclick="volverPrincipal();">
+                </div>
+                <div>
+                    <img id="backgroundMarcador" src="img/txt.png" alt="">
+                    <span id="score" class="sobre marcador">0 - 0</span>
+                </div>
+                <div>
+                    <input id="btnSonido1" type="image" src="img/btnSonidoOn.png" alt="Submit" class="sobre btnSonido"
+                        onclick="StartOrStop(this);">
+                </div>
+
+
             </div>
         </div>
         <div id="cartaSoldado">
@@ -73,21 +83,21 @@
     <section id="info_5" class="ocultar">
         <img src="img/btnInformacion.png" class="titulo">
         <div>
-            <img src="img/txtInformacion.png" class="instrucciones" />
+            <img src="img/txtInformacion.png" class="informacion" />
         </div>
-      
+
 
 
         <!-- <img src="img/txtInformacion.png" class="instrucciones"> -->
-        <input id="btnVolver_5" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="btnVolver"
+        <input id="btnVolver_5" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="btnVolverInfo"
             onclick="volverPrincipal();">
     </section>
     <section id="resultado_6" class="ocultar">
         <img id="resultadoBatalla" src="img/btnInformacion.png" class="titulo">
         <input id="btnReiniciar" type="image" src="img/btnReiniciar.png" alt="Submit" onclick="volverJuego();">
         <input id="btnVolver_6" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="btnVolver"
-        onclick="volverPrincipal();">
-    </section> 
+            onclick="volverPrincipal();">
+    </section>
 
     <audio id="soundTrack" src="audio/MedievalMusic.mp3" autoplay="true" loop="true"></audio>
 
