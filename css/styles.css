@@ -18,7 +18,7 @@ section{
 
 html, body{
     background-position: center;
-   
+    overflow:hidden; 
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
