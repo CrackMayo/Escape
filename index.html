@@ -41,32 +41,38 @@
 
             </div>
         </div>
-        <div id="cartaSoldado">
-            <img id="cartaAleatoria" src="img/cartaAleatoria.png" class="cartas" />
-        </div>
-
         <div id="resultado">
-
             <p id="mensaje">Seleccione una carta</p>
         </div>
+        <div id="cartaSoldado">
+         
+            <div class="botones">
+                
+                <img src="img/cartaAleatoria.png" class="sobre aleatoriaIzq" />
+                <img id="cartaAleatoria" src="img/cartaAleatoria.png" class="sobre aleatoriaCentro" />
+                <img src="img/cartaAleatoria.png" class="aleatoriaDer"/>
+                
+
+            </div>
+        </div>
+
+        
 
         <div id="cartasJugador">
-            <div id="botones">
+            <div class="botones">
                 <input id="cartaCastillo" type="image" src="img/cartaCastillo.png" alt="Submit" class="sobre castillo"
                     onclick="batalla(this);">
                 <input id="cartaEspada" type="image" src="img/cartaEspada.png" alt="Submit" class="sobre espada"
                     onclick="batalla(this);">
                 <input id="cartaPergamino" type="image" src="img/cartaPergamino.png" alt="Submit"
                     class="sobre pergamino" onclick="batalla(this);">
-
-
             </div>
 
         </div>
 
     </section>
     <section id="comoJugar_3" class="ocultar">
-        <img src="img/btnComoJugar.png" class="titulo">
+        <img src="img/btnComoJugar.png" class="tituloComoJugar">
         <img src="img/instruccion1.png" class="instrucciones">
         <img src="img/instruccion2.png" class="instrucciones">
         <img src="img/instruccion3.png" class="instrucciones2">
@@ -75,9 +81,8 @@
     </section>
     <section id="historia_4" class="ocultar">
         <img src="img/btnHistoria.png" class="titulo">
-        <img src="img/historia.png" class="instrucciones">
-        <input id="btnVolver_4" type="image" src="img/logoSencilloSmall.png" alt="Submit" class="btnVolver"
-            onclick="volverPrincipal();">
+        <img src="img/historia.png" class="historia">
+        <input id="btnAvanzar" type="image" src="img/btnAvanzar.png" alt="Submit" onclick="volverJuego();">
 
     </section>
     <section id="info_5" class="ocultar">

@@ -67,15 +67,15 @@ html, body{
 }
 
 .instrucciones{
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
-    padding-top:30px;
+    padding-top:8%;
     display: block;
     margin:auto;
 }
 
 .instrucciones2{
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
     padding-top:0px;
     display: block;
@@ -84,15 +84,16 @@ html, body{
 }
 
 .btnVolver{
-    max-width: 20%;
+    max-width: 18%;
     height: auto;
-    padding-top:20px;
+    padding-top:10%;
+    padding-bottom: 5%;
     display: block;
     margin:auto;
   
 }
 
-#botones{
+.botones{
     position: relative;
    }
 .sobre {
@@ -129,17 +130,19 @@ html, body{
 }
 
 .btnVolverInfo{
-    max-width: 20%;
+    max-width: 18%;
     height: auto;
     padding-top:20%;
     display: block;
     margin:auto;
+    padding-bottom: 5%;
     
     
 }
 
 #marcador{
     position: relative;
+    padding-bottom: 0%;
 
     
 }
@@ -152,7 +155,7 @@ html, body{
     margin-right: 30%;
 }
 
-#cartaAleatoria{
+/*#cartaAleatoria{
 
     max-width: 30%;
     height: auto;
@@ -160,7 +163,7 @@ html, body{
     display: block;
     margin:auto;
 
-}
+}*/
 
 .castillo{
 
@@ -196,7 +199,7 @@ html, body{
 
 p{
  text-align: center;   
- margin-top: 20%
+ margin-top: 10%
 }
 
 .score{
@@ -254,5 +257,58 @@ p{
     padding-top: 9%;
 }
 
+#btnAvanzar{
+    max-width: 50%;
+    height: auto;
+    padding-top:20%;
+    display: block;
+    margin:auto;
+}
 
- 
+.historia{
+    max-width: 80%;
+    height: auto;
+    padding-top:20%;
+    display: block;
+    margin:auto;
+}
+
+.tituloComoJugar{
+    max-width: 100%;
+    height: auto;
+    padding-top:10%;;
+    padding-bottom: 5%;
+    display: block;
+    margin:auto;
+}
+
+.aleatoriaIzq{
+
+    max-width: 30%;
+    height: auto;
+    padding-top:5%;
+    padding-bottom:10%;
+    margin-left: 3%;
+
+}
+
+.aleatoriaCentro{
+
+    max-width: 30%;
+    height: auto;
+    padding-top:5%;
+    padding-bottom:10%;
+
+    margin-left: 35%;
+
+}
+
+.aleatoriaDer{
+
+    max-width: 30%;
+    height: auto;
+    padding-top:5%;
+    padding-bottom:10%;
+    margin-left: 67%;
+
+}

@@ -8,6 +8,7 @@ let puntajeGuardian = 0;
 let score = document.getElementById("score");
 let mensaje = document.getElementById("mensaje");
 window.onload = init;
+let instruccionesVistas = false;
 
 function init() {
     secciones[1] = document.getElementById("pantallaPrincipal_1");
@@ -37,7 +38,20 @@ function ocultar() {
 function cambiarSeccion(target) {
     let id = target.id.split("_")[1];
     ocultar();
-    secciones[id].classList.remove("ocultar");
+    if (instruccionesVistas === false && id === "2") {
+        secciones[4].classList.remove("ocultar");
+        instruccionesVistas = true;
+        setTimeout(function () {
+            volverJuego();
+
+        }, 10000);
+
+
+
+    } else {
+        secciones[id].classList.remove("ocultar");
+    }
+
 }
 
 function volverPrincipal() {
@@ -51,17 +65,17 @@ function volverJuego() {
 
 function StartOrStop(estado) {
     var audio = document.getElementById("soundTrack")
-    if (estado.id === "btnSonido2"){
+    if (estado.id === "btnSonido2") {
         estado.src = "img/btnSonidoOn.png";
         estado.id = "btnSonido1"
         audio.play();
-    } else{
+    } else {
         estado.src = "img/btnSonidoOff.png";
         estado.id = "btnSonido2"
         audio.pause();
     }
 
-        
+
 
 }
 
@@ -88,19 +102,19 @@ function batalla(cartaJugador) {
         baraja[i].setAttribute('disabled', 'disabled');
     }
 
-    if(nombreCartaJugador === cartaSoldado.id){
+    if (nombreCartaJugador === cartaSoldado.id) {
         mensaje.innerHTML = "Empate"
-    }else if(nombreCartaJugador === "cartaCastillo" && cartaSoldado.id === "cartaEspada"){
+    } else if (nombreCartaJugador === "cartaCastillo" && cartaSoldado.id === "cartaEspada") {
         mensaje.innerHTML = "Ganaste"
         puntajeJugador++;
-        
-    }else if(nombreCartaJugador === "cartaEspada" && cartaSoldado.id === "cartaPergamino"){
+
+    } else if (nombreCartaJugador === "cartaEspada" && cartaSoldado.id === "cartaPergamino") {
         mensaje.innerHTML = "Ganaste"
         puntajeJugador++;
-    }else if(nombreCartaJugador === "cartaPergamino" && cartaSoldado.id === "cartaCastillo"){
+    } else if (nombreCartaJugador === "cartaPergamino" && cartaSoldado.id === "cartaCastillo") {
         mensaje.innerHTML = "Ganaste"
         puntajeJugador++;
-    }else{
+    } else {
         mensaje.innerHTML = "Perdiste"
         puntajeGuardian++;
     }
@@ -113,16 +127,16 @@ function batalla(cartaJugador) {
             baraja[i].removeAttribute('disabled', 'disabled');
             ImgCartaAleatoria.src = "img/cartaAleatoria.png";
             mensaje.innerHTML = "Selecciona una carta"
-          
+
         }
         removerSeleccion();
-        if(puntajeJugador === 2){
+        if (puntajeJugador === 2) {
             cambiarSeccion(document.getElementById("resultado_6"));
             document.getElementById("resultadoBatalla").src = "img/tltGanaste.png";
             puntajeGuardian = 0;
             puntajeJugador = 0;
             score.innerHTML = "" + puntajeJugador + " - " + puntajeGuardian;
-        }else if(puntajeGuardian === 2){
+        } else if (puntajeGuardian === 2) {
             cambiarSeccion(document.getElementById("resultado_6"));
             document.getElementById("resultadoBatalla").src = "img/tltPerdiste.png";
             puntajeGuardian = 0;
@@ -131,8 +145,8 @@ function batalla(cartaJugador) {
         }
 
     }, 2000);
-   
-    
+
+
 }
 
 function mostrarCarta(cartaGenerada) {
@@ -149,7 +163,7 @@ function mostrarCarta(cartaGenerada) {
 function removerSeleccion() {
     for (i in baraja) {
         baraja[i].classList.remove("seleccionado")
-        
+
     }
 }
 
