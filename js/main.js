@@ -1,13 +1,13 @@
 let secciones = [];
 let botones = [];
 let cartas = [];
-let ImgCartaAleatoria;
 let baraja = [];
 let puntajeJugador = 0;
 let puntajeGuardian = 0;
 let score = document.getElementById("score");
 let mensaje = document.getElementById("mensaje");
 window.onload = init;
+let cartasAleatorias = [];
 let instruccionesVistas = false;
 
 function init() {
@@ -22,10 +22,12 @@ function init() {
     cartas[0] = "Castillo";
     cartas[1] = "Espada";
     cartas[2] = "Pergamino";
-    ImgCartaAleatoria = document.getElementById("cartaAleatoria");
     baraja[0] = document.getElementById("cartaCastillo");
     baraja[1] = document.getElementById("cartaEspada");
     baraja[2] = document.getElementById("cartaPergamino");
+    cartasAleatorias[0] = document.getElementById("cartaAleatoriaIzquierda");
+    cartasAleatorias[1] = document.getElementById("cartaAleatoriaCentro")
+    cartasAleatorias[2] = document.getElementById("cartaAleatoriaDerecha")
 
 }
 
@@ -79,7 +81,16 @@ function StartOrStop(estado) {
 
 }
 
+
+function posicionAleatoria() {
+    
+    var posicionCarta = Math.floor(Math.random() * (cartasAleatorias.length));
+    var posicion = cartasAleatorias[posicionCarta]
+    return posicion;
+}
+
 function cartaAleatoria() {
+    
     var aleatorio = Math.floor(Math.random() * (baraja.length));
     var carta = baraja[aleatorio]
     return carta;
@@ -125,7 +136,7 @@ function batalla(cartaJugador) {
         for (i in baraja) {
 
             baraja[i].removeAttribute('disabled', 'disabled');
-            ImgCartaAleatoria.src = "img/cartaAleatoria.png";
+            cartasAleatorias[i].src = "img/cartaAleatoria.png";
             mensaje.innerHTML = "Selecciona una carta"
 
         }
@@ -150,12 +161,13 @@ function batalla(cartaJugador) {
 }
 
 function mostrarCarta(cartaGenerada) {
+    var posicion = posicionAleatoria();
     if (cartaGenerada.id === "cartaCastillo") {
-        ImgCartaAleatoria.src = "img/cartaCastillo.png";
+        posicion.src = "img/cartaCastillo.png";
     } else if (cartaGenerada.id === "cartaEspada") {
-        ImgCartaAleatoria.src = "img/cartaEspada.png";
+        posicion.src = "img/cartaEspada.png";
     } else {
-        ImgCartaAleatoria.src = "img/cartaPergamino.png";
+        posicion.src = "img/cartaPergamino.png";
     }
 
 }
