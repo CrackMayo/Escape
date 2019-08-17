@@ -260,17 +260,17 @@ p{
 }
 
 #btnAvanzar{
-    max-width: 47%;
+    max-width: 46%;
     height: auto;
-    padding-top:16%;
+    padding-top:15%;
     display: block;
     margin:auto;
 }
 
 .historia{
-    max-width: 80%;
+    max-width: 75%;
     height: auto;
-    padding-top:20%;
+    padding-top:18%;
     display: block;
     margin:auto;
 }
