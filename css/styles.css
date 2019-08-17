@@ -84,10 +84,10 @@ html, body{
 }
 
 .btnVolver{
-    max-width: 18%;
+    max-width: 16%;
     height: auto;
     padding-top:10%;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
     display: block;
     margin:auto;
   
@@ -130,12 +130,12 @@ html, body{
 }
 
 .btnVolverInfo{
-    max-width: 18%;
+    max-width: 16%;
     height: auto;
-    padding-top:20%;
+    padding-top:18%;
     display: block;
     margin:auto;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
     
     
 }
