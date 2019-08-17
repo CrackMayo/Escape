@@ -141,13 +141,13 @@ function batalla(cartaJugador) {
 
         }
         removerSeleccion();
-        if (puntajeJugador === 2) {
+        if (puntajeJugador === 3) {
             cambiarSeccion(document.getElementById("resultado_6"));
             document.getElementById("resultadoBatalla").src = "img/tltGanaste.png";
             puntajeGuardian = 0;
             puntajeJugador = 0;
             score.innerHTML = "" + puntajeJugador + " - " + puntajeGuardian;
-        } else if (puntajeGuardian === 2) {
+        } else if (puntajeGuardian === 3) {
             cambiarSeccion(document.getElementById("resultado_6"));
             document.getElementById("resultadoBatalla").src = "img/tltPerdiste.png";
             puntajeGuardian = 0;
