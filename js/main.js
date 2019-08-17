@@ -46,7 +46,7 @@ function cambiarSeccion(target) {
         setTimeout(function () {
             volverJuego();
 
-        }, 10000);
+        }, 12000);
 
 
 
