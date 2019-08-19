@@ -130,7 +130,7 @@ function batalla(cartaJugador) {
         puntajeGuardian++;
     }
 
-    score.innerHTML = "" + puntajeJugador + " - " + puntajeGuardian;
+    score.innerHTML = "" + puntajeGuardian+ " - " + puntajeJugador;
     seleccionar(id);
     setTimeout(function () {
         for (i in baraja) {
